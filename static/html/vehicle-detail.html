@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>车辆详情</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--<meta name="format-detection" content="telephone = no" />-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="金融车联网" />
+    <link rel="stylesheet" href="../css/sm.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet/less" href="../css/vehicle-detail.less">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <script src='../js/less.js'></script>
+    <script src='../js/rem.js'></script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page">
+        <!-- 标题栏 -->
+        <div class="header">
+            <a href="#" class='back'> 返回</a>
+            <h3>福田金融车联网平台</h3>
+            <a href="#" class='profile'>···</a>
+        </div>
+        <!-- 工具栏 -->
+        <div class="tool">
+            <a class="item kanban" href="dashboard.html">看板</a>
+            <a class="item cars" href="cars.html">车辆</a>
+            <a class="item my" href="attention.html">我的</a>
+        </div>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <!--车辆数据-->
+            <div class="vehicle-data">
+                <div class="data-title">
+                    <span class='fa fa-file-text'></span>
+                    车辆数据
+                </div>
+                <div class="data-content">
+                   <div class='data-item clearfix'>
+                       <p class='item-left'>车辆状态</p>
+                       <p class='item-right'>在线</p>
+                   </div>
+                   <div class='data-item clearfix'>
+                       <p class='item-left'>车牌号</p>
+                       <p class='item-right'>A12345</p>
+                   </div>
+                    <div class='data-item clearfix'>
+                        <p class='item-left'>VIN号</p>
+                        <p class='item-right'>OLVEF02EF1154566</p>
+                    </div>
+                    <div class='data-item clearfix'>
+                        <p class='item-left'>品牌</p>
+                        <p class='item-right'>欧辉</p>
+                    </div>
+                    <div class='data-item clearfix'>
+                        <p class='item-left'>型号</p>
+                        <p class='item-right'>纯电</p>
+                    </div>
+                    <div class='data-item clearfix'>
+                        <p class='item-left'>速度(KM/H)</p>
+                        <p class='item-right'>0.0</p>
+                    </div>
+                    <div class='data-item clearfix'>
+                        <p class='item-left'>总里程</p>
+                        <p class='item-right'>15620</p>
+                    </div>
+                    <div class='data-item clearfix'>
+                        <p class='item-left'>最后定位时间</p>
+                        <p class='item-right'>2017-02-02 11:11:32</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--定位地图-->
+            <div class="position">
+                <div class="position-title">
+                    <span class='fa fa-map-marker'></span>
+                    最后定位位置
+                </div>
+                <div class="position-map">
+
+                </div>
+            </div>
+
+            <!--今日轨迹-->
+            <div class="today">
+                <p class='today-left '>
+                    今日轨迹(1)
+                </p>
+                <p class='today-right '>
+                    故障报警(0)
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 其他的单个page内联页（如果有） -->
+    <div class="page">...</div>
+</div>
+
+<!-- popup, panel 等放在这里 -->
+
+
+
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+</body>
+</html>

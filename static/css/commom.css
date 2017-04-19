@@ -1,0 +1,80 @@
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin:0;padding:0;}
+body{ font-family:'微软雅黑'; font-size:0.14rem;}
+em{font-style:normal}
+li{list-style:none}
+a{text-decoration:none;}
+img{border:none; vertical-align:top;}
+table{border-collapse:collapse;}
+textarea{ resize:none;overflow:auto;}
+.clear{zoom:1;}
+.clear:after{ content:''; display:block; clear:both;}
+
+/*此为基础样式*/
+html{
+   	font-size:100px;	
+   	}
+/*以下PAD横屏*/
+@media screen and (max-width: 960px) {
+   	html{
+   		font-size:100px;	
+   	}
+}
+
+/*以下为小PAD，过渡*/
+@media screen and (max-width: 760px){	
+	html{
+   		font-size:100px;	
+   	}
+}	
+/*以下为迷你PAD，手机横屏*/
+@media screen and (max-width: 670px){
+	html{
+		font-size:100px
+	}
+}	
+/*以下为plus,L*/
+@media screen and (max-width: 440px){	
+	html{
+		font-size:96px
+	}
+}
+/*以下为手机标准尺寸-较大*/
+@media screen and (max-width: 400px){	
+	html{
+		font-size:95px
+	}
+}
+/*以下为手机标准尺寸,M*/
+@media screen and (max-width: 380px){  
+	html{
+		font-size:94px
+	}
+}	
+/*以下为小尺寸手机,S*/
+@media screen and (max-width: 330px){  
+	html{
+		font-size:84px
+	}	
+}
+
+
+
+
+/* 1px 线   */
+/*
+ 元素:after { 
+        position: absolute; 
+        content: ''; 
+        width: 100%; 
+        left: 0; 
+        bottom: 2px; 
+        height: 1px; 
+        background-color: #ddd; 
+        -webkit-transform: scale(1,0.5); 
+        transform: scale(1,0.5); 
+        -webkit-transform-origin: center bottom; 
+        transform-origin: center bottom ;
+    }
+ 
+ */

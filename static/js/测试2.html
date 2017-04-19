@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>测试</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--<meta name="format-detection" content="telephone = no" />-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src='rem.js'></script>
+    <style>
+        html,body,div{
+            margin:0;
+            padding:0;
+        }
+        #charts2{
+            width: 10rem;
+            height:5rem;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="charts2"></div>
+
+<script src='echarts.js'></script>
+<script>
+    var worldMapContainer = document.getElementById('charts2');
+
+    //用于使chart自适应高度和宽度,通过窗体高宽计算容器高宽
+    var resizeWorldMapContainer = function () {
+        worldMapContainer.style.width = worldMapContainer.clientWidth+'px';
+        worldMapContainer.style.height = worldMapContainer.innerHeight+'px';
+    };
+    //设置容器高宽
+    resizeWorldMapContainer();
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(worldMapContainer);
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'ECharts 入门示例'
+        },
+        tooltip: {
+            show:true,
+            confine:true,
+        },
+        legend: {
+            data:['销量'],
+            height: worldMapContainer.style.height,
+            width: worldMapContainer.style.width
+        },
+        xAxis: {
+            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    //用于使chart自适应高度和宽度
+    window.onresize = function () {
+        //重置容器高宽
+        resizeWorldMapContainer();
+        myChart.resize();
+    };
+
+
+
+</script>
+</body>
+</html>

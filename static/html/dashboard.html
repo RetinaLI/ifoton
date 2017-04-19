@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>福田金融车联网平台</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--<meta name="format-detection" content="telephone = no" />-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="金融车联网" />
+    <link rel="stylesheet" href="../css/sm.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet/less" href="../css/dashboard.less">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page">
+        <!-- 标题栏 -->
+        <div class="header">
+            <a href="#" class='back'> 返回</a>
+            <h3>福田金融车联网平台</h3>
+            <a href="#" class='profile'>···</a>
+        </div>
+        <!-- 工具栏 -->
+        <div class="tool">
+            <a class="item kanban" href="dashboard.html">看板</a>
+            <a class="item cars" href="cars.html">车辆</a>
+            <a class="item my" href="attention.html">我的</a>
+
+        </div>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content ">
+            <!--第一个图表-->
+            <div class="first">
+                <div id="charts1" ></div>
+                <div class="info-left">
+                    <ul>
+                        <li>
+                            <p class="item-name">总接入车辆</p>
+                            <p class="item-num">
+                                <span>9</span>
+                                <span>9</span>
+                                <span>2</span>
+                                <span>6</span>
+                                <span>1</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="item-name">在线车辆</p>
+                            <p class="item-num">
+                                <span>0</span>
+                                <span>3</span>
+                                <span>2</span>
+                                <span>6</span>
+                                <span>8</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="item-name">停驶车辆</p>
+                            <p class="item-num">
+                                <span>0</span>
+                                <span>0</span>
+                                <span>2</span>
+                                <span>6</span>
+                                <span>8</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="item-name">离线车辆</p>
+                            <p class="item-num">
+                                <span>0</span>
+                                <span>3</span>
+                                <span>2</span>
+                                <span>4</span>
+                                <span>6</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-right">
+                    <ul>
+                        <li>
+                            <p class="item-name">报警车辆</p>
+                            <p class="item-num">
+                                <span>0</span>
+                                <span>0</span>
+                                <span>2</span>
+                                <span>6</span>
+                                <span>1</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="item-name">故障车辆</p>
+                            <p class="item-num">
+                                <span>0</span>
+                                <span>0</span>
+                                <span>1</span>
+                                <span>6</span>
+                                <span>0</span>
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!--表格-->
+            <div class="categary-data ">
+                <ul class='clearfix'>
+                    <li class='business'>
+                        <p class='business-name'>泵送金融业务</p>
+                        <p class='business-val'>1560</p>
+                    </li>
+                    <li class='business'>
+                        <p class='business-name'>泵送金融业务</p>
+                        <p class='business-val'>1560</p>
+                    </li>
+                    <li class='business'>
+                        <p class='business-name'>泵送金融业务</p>
+                        <p class='business-val'>1560</p>
+                    </li>
+                    <li class='business'>
+                        <p class='business-name'>泵送金融业务</p>
+                        <p class='business-val'>1560</p>
+                    </li>
+                    <li class='business'>
+                        <p class='business-name'>泵送金融业务</p>
+                        <p class='business-val'>1560</p>
+                    </li>
+                    <li class='business'>
+                        <p class='business-name'>泵送金融业务</p>
+                        <p class='business-val'>1560</p>
+                    </li>
+
+                </ul>
+            </div>
+
+             <!--第二个图表   -->
+            <div class="increase">
+                <div class="increase-title">
+                    <span class='fa fa-bar-chart'></span>
+                    每月新增
+                </div>
+                <div id="charts2"></div>
+            </div>
+
+
+    </div>
+
+</div>
+
+<!-- popup, panel 等放在这里 -->
+
+    </div>
+</div>
+<script src='../js/less.js'></script>
+<script src='../js/rem.js'></script>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script src='../js/echarts.js'></script>
+<script src='../js/dashboard.js'></script>
+
+
+</body>
+</html>

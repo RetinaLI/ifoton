@@ -1,0 +1,174 @@
+
+@import "base";
+body{
+  background: #fff;
+}
+.page{
+  background: #fff;
+}
+.page{
+  .vehicle-search{
+    padding: 0.2rem 0.25rem;
+    height:1.1rem;
+    padding-bottom: 0.1rem;
+    position: relative;
+    #search {
+      width:92%;
+      height: 100%;
+      line-height:1.1rem;
+      border: none;
+      background: #f0f0f0;
+      border-radius: 0.15rem;
+      padding-left:0.8rem;
+    }
+    .search-icon{
+      display: inline-block;
+      position: absolute;
+      width:0.5rem;
+      height:0.5rem;
+      left: 0.45rem;
+      top: 0.35rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/search.png);
+    }
+  }
+
+  .vehicle-info{
+    //border-top:1px solid #ccc;
+    //padding:0 0.5rem;
+    .each{
+      border-bottom:1px solid #ccc;
+      padding:0.15rem 0.15rem 0rem ;
+      position: relative;
+      .each-info{
+        float: left;
+        display: inline-block;
+        width:100%;
+        height:2.8rem;
+        //padding-bottom:0.7rem;
+        position: relative;
+        padding-left:2.4rem;
+        .pic{
+          display: block;
+          width: 2.1rem;
+          height: 2.1rem;
+          position: absolute;
+          left: 0;
+          top: 0;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+        p{
+          font-size: 0.31rem;
+          margin-top:0.1rem;
+          margin-bottom:0.2rem;
+        }
+        .address{
+          position: absolute;
+          bottom: 0.1rem;
+          left:0.5rem;
+          font-size: 0.3rem;
+          .locate{
+            position: absolute;
+            width:0.4rem;
+            height:0.4rem;
+            left: -0.5rem;
+            bottom: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../images/locate.png);
+          }
+        }
+        .time{
+          position: absolute;
+          font-size: 0.28rem;
+          right: 0;
+          top: 0;
+        }
+      }
+
+      .user-operate{
+        z-index:100;
+        position: absolute;
+        display:inline-block ;
+        width:35%;
+        height:1rem;
+        right: 0;
+        bottom: 0;
+        .colect{
+          position: absolute;
+          font-size: 0.325rem;
+          right: 0rem;
+          bottom: 0.15rem;
+          color: #359EEF;
+          width:1.5rem;
+          height:0.5rem;
+          line-height:0.5rem;
+          padding-left:0.5rem;
+          //background: yellowgreen;
+        }
+        .like{
+          display: inline-block;
+          position: absolute;
+          font-size: 0.325rem;
+          width:1.5rem;
+          height:0.5rem;
+          line-height:0.5rem;
+
+          right: 0;
+          bottom: 0.15rem;
+          color: #359EEF;
+          padding-left:0.5rem;
+          //background: pink;
+        }
+        i{
+          position: absolute;
+          width:0.5rem;
+          height:0.4rem;
+          left: 0;
+          top: 0.05rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .like-icon{
+          background-image: url(../images/like.png);
+        }
+        .colect-icon{
+          background-image: url(../images/collect.png);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
